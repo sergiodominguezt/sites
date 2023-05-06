@@ -1,4 +1,4 @@
-package com.wom.sites.model;
+package com.wom.sites.sitios;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;

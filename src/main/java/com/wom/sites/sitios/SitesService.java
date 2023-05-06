@@ -1,8 +1,6 @@
-package com.wom.sites.sevices;
+package com.wom.sites.sitios;
 
 import com.wom.sites.exception.ResourceNotFoundException;
-import com.wom.sites.model.Sites;
-import com.wom.sites.repositories.SitesRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 

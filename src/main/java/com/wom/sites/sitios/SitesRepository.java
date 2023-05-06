@@ -1,6 +1,5 @@
-package com.wom.sites.repositories;
+package com.wom.sites.sitios;
 
-import com.wom.sites.model.Sites;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

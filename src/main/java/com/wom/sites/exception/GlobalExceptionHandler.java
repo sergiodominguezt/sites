@@ -1,6 +1,6 @@
 package com.wom.sites.exception;
 
-import com.wom.sites.model.Sites;
+import com.wom.sites.sitios.Sites;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
