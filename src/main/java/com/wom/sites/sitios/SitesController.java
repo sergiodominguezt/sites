@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000", methods = {RequestMethod.PUT,RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE})
 @RestController
 @RequestMapping("/api/v1")
 
@@ -30,7 +30,6 @@ public class SitesController {
     }
 
     @PostMapping("/sites")
-
     public Sites createSite(@RequestBody Sites sites) {
         return sitesService.createSite(sites);
     }

@@ -50,9 +50,13 @@ public class SecurityConfiguration {
 //                .requestMatchers(DELETE, "/api/v1/admin/**").hasRole(ADMIN_DELETE.name())
                 .requestMatchers("api/v1/sites/**").hasRole(ADMIN.name())
 
+
                 .requestMatchers(GET, "api/v1/sites/**").hasAuthority(ADMIN.name())
-                .requestMatchers(POST, "api/v1/sites/**").hasRole(USER.name())
+                .requestMatchers(POST, "api/v1/sites/**").hasAuthority(ADMIN.name())
                 .requestMatchers("api/v1/demo-controller").hasAnyAuthority(ADMIN.name(), USER.name())
+
+                .requestMatchers("api/v1/createSite/**").hasRole(USER.name())
+                .requestMatchers(POST, "api/v1/sites/**").hasAuthority(USER.name())
 
                 .anyRequest()
                 .authenticated()
